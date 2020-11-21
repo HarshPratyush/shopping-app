@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "shopping-app": {
+    "altrooist-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -12,12 +12,12 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "altrooist",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shopping-app",
+            "outputPath": "dist/altrooist-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "shopping-app:build"
+            "browserTarget": "altrooist-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "shopping-app:build:production"
+              "browserTarget": "altrooist-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shopping-app:build"
+            "browserTarget": "altrooist-app:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "shopping-app:serve"
+            "devServerTarget": "altrooist-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "shopping-app:serve:production"
+              "devServerTarget": "altrooist-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "shopping-app"
+  "defaultProject": "altrooist-app"
 }
