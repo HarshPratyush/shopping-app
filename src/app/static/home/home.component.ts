@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PageData } from 'src/app/models/Page';
 import { ProductDetails } from 'src/app/models/ProductDetails';
@@ -11,7 +11,7 @@ declare var $:any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit,AfterViewInit {
 
   activePage=0;
   selectedProductType:ProductType={id:null,name:''};
@@ -22,6 +22,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.loadProds();
     this.loadProductType();
+    this.handleScroll();
+  }
+  
+  ngAfterViewInit():void{
     this.handleScroll();
   }
 

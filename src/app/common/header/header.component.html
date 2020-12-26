@@ -1,11 +1,11 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar header">
+    
+    <a class="navbar-brand waves-effect"  routerLink="" >
+      <img class="logo" src="assets/images/logo.jpeg">
+    <strong class="banner-text">Altrooist</strong>
+    </a>
+
     <div class="container">
-
-      <a class="navbar-brand waves-effect"  routerLink="" >
-        <!-- <img class="logo" src="assets/images/logo.jpeg"> -->
-      <!-- <strong class="blue-text">Altrooist</strong> -->
-      </a>
-
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,6 @@
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
             <a class="nav-link waves-effect">
-              <span class="badge red z-depth-1 mr-1"> 1 </span>
               <i class="fas fa-shopping-cart"></i>
               <span class="clearfix d-none d-sm-inline-block"> Cart </span>
             </a>
@@ -43,6 +42,7 @@
               <i class="fab fa-twitter fa-lg"></i>
             </a>
           </li>
+          
           <li class="nav-item">
             <a (click)="postLogin()" class="nav-link border border-light rounded waves-effect"
               target="_blank">
@@ -52,6 +52,7 @@
               Login With Google
             </a>
           </li>
+        
         </ul>
 
       </div>

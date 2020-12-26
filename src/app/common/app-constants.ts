@@ -9,5 +9,7 @@ export class AppConstants {
     public static ERROR='error'
     public static GET_ALL_PRODUCT = `assets/data/products.json`
     public static GET_ALL_PRODUCT_TYPE = `assets/data/productTypes.json`
+    public static GET_SELECTED_PRODUCT = `assets/data/product.json`
+    public static GET_SIMILAR_PRODUCT = `assets/data/similarproduct.json`
 
 }
