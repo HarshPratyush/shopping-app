@@ -29,7 +29,9 @@
             ],
             "styles": [
               "node_modules/font-awesome/scss/font-awesome.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/mdbootstrap/css/bootstrap.min.css",
+              "node_modules/mdbootstrap/css/mdb.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -37,7 +39,8 @@
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/chart.js/dist/Chart.js",
-              "node_modules/hammerjs/hammer.min.js"
+              "node_modules/hammerjs/hammer.min.js",
+              "node_modules/mdbootstrap/js/mdb.min.js"
             ]
           },
           "configurations": {

@@ -1,14 +1,3 @@
-<altrooist-header [drawer]="drawer"></altrooist-header>
-<mat-sidenav-container class="container" [hasBackdrop]="true">
-  <mat-sidenav #drawer [mode]="'over'" [autoFocus]="false">
-    <altrooist-side-nav-container>
-    </altrooist-side-nav-container>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <div class="main-content">
+<altrooist-header ></altrooist-header>
       <router-outlet></router-outlet>
-    </div>
     <altrooist-footer></altrooist-footer>
-  </mat-sidenav-content>
-</mat-sidenav-container>
