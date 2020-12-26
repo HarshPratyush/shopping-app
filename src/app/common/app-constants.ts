@@ -8,5 +8,6 @@ export class AppConstants {
     public static ACCESS_TOKEN = 'access-token';
     public static ERROR='error'
     public static GET_ALL_PRODUCT = `assets/data/products.json`
+    public static GET_ALL_PRODUCT_TYPE = `assets/data/productTypes.json`
 
 }

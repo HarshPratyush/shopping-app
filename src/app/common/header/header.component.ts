@@ -29,10 +29,9 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.drawer);
   }
   postLogin(){
-    let windows = window.open(AppConstants.OAUTH_LOGIN_URL,'New Window','top=70,left=500');
+    let windows = window.open(AppConstants.OAUTH_LOGIN_URL,'New Window','top=40,left=500,width=100');
     windows.focus();
   }
 
