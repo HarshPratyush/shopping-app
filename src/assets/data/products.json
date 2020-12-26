@@ -1,0 +1,61 @@
+{
+    "totalPages":5,
+    "totalElements":50,
+  "content":[
+    {
+      "name": "Denim Shirt",
+      "price": "1500",
+      "category": "Shirt",
+      "imageUrl": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+      "tag": "New",
+      "tagClass": "danger-color"
+    },
+    {
+      "name": "Sweatshirt",
+      "price": "3000",
+      "category": "Sport Wear",
+      "imageUrl": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg"
+    },
+    {
+      "name": "Grey Blouse",
+      "price": "2768",
+      "category": "Sport Wear",
+      "imageUrl": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg",
+      "tag": "BestSeller",
+      "tagClass": "primary-color"
+    },
+    {
+      "name": "Black Jacket",
+      "price": "1600",
+      "category": "Out Wear",
+      "imageUrl": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg"
+    },
+    {
+      "name": "Grey Blouse",
+      "price": "2768",
+      "category": "Sport Wear",
+      "imageUrl": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg",
+      "tag": "BestSeller",
+      "tagClass": "primary-color"
+    },
+    {
+      "name": "Black Jacket",
+      "price": "1600",
+      "category": "Out Wear",
+      "imageUrl": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg"
+    },{
+      "name": "Denim Shirt",
+      "price": "1500",
+      "category": "Shirt",
+      "imageUrl": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg",
+      "tag": "New",
+      "tagClass": "danger-color"
+    },
+    {
+      "name": "Sweatshirt",
+      "price": "3000",
+      "category": "Sport Wear",
+      "imageUrl": "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg"
+    }
+  ]
+  }

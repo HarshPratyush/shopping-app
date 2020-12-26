@@ -1,0 +1,26 @@
+[
+    {
+      "id": null,
+      "name": "All"
+    },
+    {
+      "id": 1,
+      "name": "Shirts"
+    },
+    {
+      "id": 2,
+      "name": "Sports Wear"
+    },
+    {
+      "id": 3,
+      "name": "Outwears"
+    },
+    {
+      "id": 4,
+      "name": "Winter Wear"
+    },
+    {
+      "id": 5,
+      "name": "Top Wear"
+    }
+  ]

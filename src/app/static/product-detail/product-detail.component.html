@@ -1,0 +1,96 @@
+
+
+  <main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+
+      <div class="row wow fadeIn">
+
+        <div class="col-md-6 mb-4">
+
+          <img [src]="productDetails.imageUrl" class="img-fluid" alt="">
+
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="p-4">
+            <div class="mb-3">
+                <a href="">
+                  <span class="badge purple mr-1">Hot New</span>
+                </a>
+                <a href="">
+                  <span class="badge blue mr-1">Sale</span>
+                </a>
+                <a href="">
+                  <span class="badge red mr-1">Bestseller</span>
+                </a>
+              </div>
+
+             <div class="prod-name"> {{productDetails.name}}</div>
+             <hr>
+            <p class="lead">
+              <span class="mr-1" *ngIf="productDetails.oldPrice">
+                <del>&#8377;{{productDetails.oldPrice}}</del>
+              </span>
+              <span>&#8377;{{productDetails.price}}</span>
+            </p>
+
+            <p class="lead font-weight-bold">Description</p>
+
+            <p>{{productDetails.description}}</p>
+
+            <div class="d-flex justify-content-left">
+              <input type="number" value="1" min="1" max="10" aria-label="Search" class="form-control" style="width: 100px">
+              <button class="btn add-cart btn-md my-0 p" type="submit">Add to cart
+                <i class="fas fa-shopping-cart ml-1"></i>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4 clickable" *ngFor="let prod of similarProdcut" (click)="productRouting(prod)">
+
+        <div class="card">
+
+          <div class="view overlay">
+            <img [src]="prod.imageUrl" class="card-img-top"
+              alt="">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <div  class="card-body text-center">
+            <a href="" class="grey-text">
+              <h5>{{prod.category}}</h5>
+            </a>
+            <h5>
+              <strong>
+                <a class="dark-grey-text">{{prod.name}}
+                  <span class="badge badge-pill" *ngIf="prod.tag" [ngClass]="prod.tagClass">{{prod.tag}}</span>
+                </a>
+              </strong>
+            </h5>
+
+            <h4 class="font-weight-bold blue-text">
+              <strong>&#8377;{{prod.price}}</strong>
+            </h4>
+
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+
+    </div>
+  </main>
+
+
