@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProductDetails } from 'src/app/models/ProductDetails';
+import { ProdServiceService } from '../services/api/prod-service.service';
 
 @Component({
   selector: 'altrooist-home',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  productDetails:ProductDetails[]=[];
+  constructor(private prodService:ProdServiceService,public router:Router) { }
 
   ngOnInit(): void {
+    this.loadProds();
+  }
+
+  loadProds(){
+    this.prodService.getAllProducts().then(data=>{
+      this.productDetails = data;
+    })
+  }
+
+  productRouting(prod:ProductDetails){
+    this.router.navigate(["/product",prod.price])
   }
 
 }

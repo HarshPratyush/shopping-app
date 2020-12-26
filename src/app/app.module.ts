@@ -11,15 +11,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatBadgeModule} from '@angular/material/badge';
-import { SideNavContainerComponent } from './common/side-nav-container/side-nav-container.component';
 import { Oauth2Component } from './common/oauth2/oauth2.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SideNavContainerComponent,
     Oauth2Component
   ],
   imports: [
@@ -30,7 +29,8 @@ import { Oauth2Component } from './common/oauth2/oauth2.component';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatBadgeModule
+    MatBadgeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
