@@ -11,11 +11,15 @@ const routes: Routes = [
   {
     path:'ouath2/redirect',
     component: Oauth2Component
+  },
+  {
+    path:'cart',
+    loadChildren:() => import('./cart-detail/cart-detail.module').then(m => m.CartDetailModule)
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

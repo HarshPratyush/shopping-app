@@ -27,24 +27,7 @@
 
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
-            <a class="nav-link waves-effect">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="clearfix d-none d-sm-inline-block"> Cart </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.instagram.com/altro_oist/" class="nav-link waves-effect" target="_blank">
-              <i class="fab fa-facebook-f fa-lg"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.instagram.com/altro_oist/" class="nav-link waves-effect" target="_blank">
-              <i class="fab fa-twitter fa-lg"></i>
-            </a>
-          </li>
-          
-          <li class="nav-item">
-            <a (click)="postLogin()" class="nav-link border border-light rounded waves-effect"
+            <a (click)="postLogin()" class="nav-link border border-dark rounded waves-effect"
               target="_blank">
               <img width="20px" style="margin-bottom:3px; margin-right:5px" 
               alt="Google sign-in"
@@ -52,7 +35,13 @@
               Login With Google
             </a>
           </li>
-        
+          
+          <li class="nav-item nav-link clickable" routerLink="cart">
+            <!-- <a class="nav-link"> -->
+              <mat-icon matBadge="15" matBadgeColor="warn"  >shopping_cart</mat-icon>
+            <!-- </a> -->
+          </li>
+
         </ul>
 
       </div>

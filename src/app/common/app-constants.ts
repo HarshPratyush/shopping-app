@@ -11,5 +11,6 @@ export class AppConstants {
     public static GET_ALL_PRODUCT_TYPE = `assets/data/productTypes.json`
     public static GET_SELECTED_PRODUCT = `assets/data/product.json`
     public static GET_SIMILAR_PRODUCT = `assets/data/similarproduct.json`
+    public static GET_CART_DETAILS = `assets/data/cartdetails.json`
 
 }
